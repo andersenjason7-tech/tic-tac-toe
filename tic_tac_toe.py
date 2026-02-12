@@ -1,14 +1,7 @@
 """Module providing a function printing python version."""
 
-import sys
 import tkinter as tk
 from tkinter import font
-
-
-def print_python_version():
-    """Function printing python version."""
-    print(sys.version)
-
 
 
 class TicTacToeBoard(tk.Tk):
@@ -58,3 +51,13 @@ class TicTacToeBoard(tk.Tk):
                     pady=5,
                     sticky="nsew"
                 )
+
+
+def main():
+    """Create the game's board and run its main loop."""
+    board = TicTacToeBoard()
+    board.mainloop()
+
+if __name__ == "__main__":
+    main()
+    
